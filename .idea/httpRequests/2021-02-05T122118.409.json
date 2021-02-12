@@ -1,0 +1,10 @@
+{
+  "cause": {
+    "cause": {
+      "cause": null,
+      "message": "Unique index or primary key violation: \"PUBLIC.UK_QXBCQ5V5QWV5VW0UYXPG9VV1S_INDEX_D ON PUBLIC.ADDRESS_BOOK_ADDRESS_BOOK(ADDRESS_BOOK_ID) VALUES 17\"; SQL statement:\ninsert into address_book_address_book (address_book_addressbook_id, address_book_id) values (?, ?) [23505-200]"
+    },
+    "message": "could not execute statement"
+  },
+  "message": "could not execute statement; SQL [n/a]; constraint [\"PUBLIC.UK_QXBCQ5V5QWV5VW0UYXPG9VV1S_INDEX_D ON PUBLIC.ADDRESS_BOOK_ADDRESS_BOOK(ADDRESS_BOOK_ID) VALUES 17\"; SQL statement:\ninsert into address_book_address_book (address_book_addressbook_id, address_book_id) values (?, ?) [23505-200]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement"
+}

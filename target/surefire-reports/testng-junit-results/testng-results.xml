@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="65" started-at="2021-02-12T08:45:27 EST" finished-at="2021-02-12T08:45:27 EST">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="65" started-at="2021-02-12T08:45:27 EST" finished-at="2021-02-12T08:45:27 EST">
+      <class name="BuddyInfoTest">
+        <test-method status="PASS" signature="testGetUnsetPhone()" name="testGetUnsetPhone" duration-ms="16" started-at="2021-02-12T08:45:27 EST" finished-at="2021-02-12T08:45:27 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetUnsetPhone -->
+        <test-method status="PASS" signature="testGetFirstName()" name="testGetFirstName" duration-ms="16" started-at="2021-02-12T08:45:27 EST" finished-at="2021-02-12T08:45:27 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetFirstName -->
+        <test-method status="PASS" signature="testGetInfo()" name="testGetInfo" duration-ms="15" started-at="2021-02-12T08:45:27 EST" finished-at="2021-02-12T08:45:27 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetInfo -->
+        <test-method status="PASS" signature="testChangeFirstName()" name="testChangeFirstName" duration-ms="15" started-at="2021-02-12T08:45:27 EST" finished-at="2021-02-12T08:45:27 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangeFirstName -->
+        <test-method status="PASS" signature="testCreateBuddyInfo()" name="testCreateBuddyInfo" duration-ms="16" started-at="2021-02-12T08:45:27 EST" finished-at="2021-02-12T08:45:27 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateBuddyInfo -->
+        <test-method status="PASS" signature="testGetLastName()" name="testGetLastName" duration-ms="15" started-at="2021-02-12T08:45:27 EST" finished-at="2021-02-12T08:45:27 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetLastName -->
+        <test-method status="PASS" signature="testChangeLastName()" name="testChangeLastName" duration-ms="15" started-at="2021-02-12T08:45:27 EST" finished-at="2021-02-12T08:45:27 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangeLastName -->
+        <test-method status="PASS" signature="testSetPhone()" name="testSetPhone" duration-ms="15" started-at="2021-02-12T08:45:27 EST" finished-at="2021-02-12T08:45:27 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetPhone -->
+      </class> <!-- BuddyInfoTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

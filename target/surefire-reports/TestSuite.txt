@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.953 s <<< FAILURE! - in TestSuite
+preformJPATestOnAddressBook(AddressBookJPATest)  Time elapsed: 0.298 s  <<< FAILURE!
+javax.persistence.PersistenceException: No Persistence provider for EntityManager named jpa-test
+	at AddressBookJPATest.preformJPATestOnAddressBook(AddressBookJPATest.java:91)
+
+preformJPATestOnAddressBookCascade(AddressBookJPATest)  Time elapsed: 0.003 s  <<< FAILURE!
+javax.persistence.PersistenceException: No Persistence provider for EntityManager named jpa-test
+	at AddressBookJPATest.preformJPATestOnAddressBookCascade(AddressBookJPATest.java:172)
+
+preformJPATestOnBuddyInfo(AddressBookJPATest)  Time elapsed: 0.006 s  <<< FAILURE!
+javax.persistence.PersistenceException: No Persistence provider for EntityManager named jpa-test
+	at AddressBookJPATest.preformJPATestOnBuddyInfo(AddressBookJPATest.java:29)
+
