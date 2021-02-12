@@ -16,12 +16,9 @@ public class TestController {
         return "Test Passed!";
     }
 
-
     @GetMapping("/modelAndView")
     public ModelAndView index() {
         ModelAndView modelAndView = new ModelAndView("app/index");
         return modelAndView;
     }
-
-
 }

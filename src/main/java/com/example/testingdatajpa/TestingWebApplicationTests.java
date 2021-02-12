@@ -42,9 +42,4 @@ public class TestingWebApplicationTests {
         this.mockMvc.perform(get("/test")).andDo(print()).andExpect(status().isOk())
                 .andExpect(content().string(containsString("Test Passed!")));
     }
-
-
-
-
-
 }
