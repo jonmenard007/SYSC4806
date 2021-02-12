@@ -21,6 +21,10 @@ public class BuddyInfo{
     @Basic
     private String phoneNumber;
 
+    @Basic
+    private String address;
+
+
 
     public BuddyInfo() { }
 
@@ -69,13 +73,21 @@ public class BuddyInfo{
         this.phoneNumber = phoneNumber;
     }
 
-    public String getInfoString(){
-        return getFirstName() + " " + getLastName() + " " + getPhoneNumber();
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getInfoString() {
+        return getFirstName() + " " + getLastName() + " " + getAddress();
     }
 
     @Override
     public String toString(){
-        return getFirstName() + " " + getLastName() + " " + getPhoneNumber() + " " + getId();
+        return getFirstName() + " " + getLastName() + " " + getPhoneNumber() + " " + getAddress() + " " + getId();
     }
 
 
