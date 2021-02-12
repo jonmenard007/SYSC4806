@@ -16,7 +16,7 @@ import java.util.Map;
 import java.util.Optional;
 
 @ComponentScan("com.example.accessingdatajpa")
-@EnableJpaRepositories("com.example.accessingdatajpa")
+
 @EntityScan("com.example.accessingdatajpa")
 @Controller
 public class FrontEndController {
