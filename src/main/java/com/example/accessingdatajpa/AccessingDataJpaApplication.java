@@ -34,7 +34,7 @@ public class AccessingDataJpaApplication  {
             BuddyInfo buddy1 = new BuddyInfo("Luke", "SkyWalker", "999-999-9999" , "193246 Desert Drive, Tatooine");
             BuddyInfo buddy2 = new BuddyInfo("Padme", "Amidala", "999-999-9999" , "324234 Castle Court, Nabii");
             BuddyInfo buddy3 = new BuddyInfo("Han", "Solo", "999-999-9999" , "1 Millennium Falcon Park , Corellia");
-            BuddyInfo buddy4 = new BuddyInfo("Darth", "Vader", "999-999-9999" , "2929 Death Star, Sapce");
+            BuddyInfo buddy4 = new BuddyInfo("Darth", "Vader", "999-999-9999" , "2929 Death Star, Space");
 
             addressBook.addBuddyInfo(buddy1);
             addressBook.addBuddyInfo(buddy2);
