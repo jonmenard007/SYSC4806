@@ -10,6 +10,7 @@ import javax.persistence.Query;
 
 import com.example.accessingdatajpa.AddressBook;
 import com.example.accessingdatajpa.BuddyInfo;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.testng.annotations.Test;
 import static org.junit.Assert.assertEquals;
 
