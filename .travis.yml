@@ -3,4 +3,6 @@ deploy:
  provider: heroku
  api-key: $HEROKU_API_KEY
  app: jonmenard-sysc4806
+ on:
+  branch: main
 dist: trusty
