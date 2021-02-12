@@ -32,6 +32,7 @@ public class FrontEndController {
         ArrayList<AddressBook> addressBooks = (ArrayList<AddressBook>) addressBookRepository.findAll();
         AddressBook addressBook = addressBookRepository.findById(1);
         model.addAttribute("addressBooks", addressBooks);
+        System.out.println("in /here");
         return "addressBooks";
     }
 
