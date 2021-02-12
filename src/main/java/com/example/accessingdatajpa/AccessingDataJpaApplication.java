@@ -41,5 +41,6 @@ public class AccessingDataJpaApplication  {
     private BuddyInfoRepository buddyInfoRepository;
 
 
+
 }
 
