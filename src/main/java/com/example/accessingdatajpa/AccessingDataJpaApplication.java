@@ -32,9 +32,14 @@ public class AccessingDataJpaApplication  {
         return (args) -> {
             AddressBook addressBook = new AddressBook();
             BuddyInfo buddy1 = new BuddyInfo("Luke", "SkyWalker", "999-999-9999" , "193246 Desert Drive, Tatooine");
-            BuddyInfo buddy2 = new BuddyInfo("Padme", "Amidala", "999-999-9999" , "324234 Castle Drive, Nabii");
+            BuddyInfo buddy2 = new BuddyInfo("Padme", "Amidala", "999-999-9999" , "324234 Castle Court, Nabii");
+            BuddyInfo buddy3 = new BuddyInfo("Han", "Solo", "999-999-9999" , "1 Millennium Falcon Park , Corellia");
+            BuddyInfo buddy4 = new BuddyInfo("Darth", "Vader", "999-999-9999" , "2929 Death Star, Sapce");
+
             addressBook.addBuddyInfo(buddy1);
             addressBook.addBuddyInfo(buddy2);
+            addressBook.addBuddyInfo(buddy3);
+            addressBook.addBuddyInfo(buddy4);
             addressBookRepository.save(addressBook);
             System.out.println(addressBook.toString());
         };

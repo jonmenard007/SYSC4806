@@ -55,6 +55,6 @@ public class FrontEndController {
             addressBook = a.get();
         }
         model.addAttribute("addressBook", addressBook.getAddressBook());
-        return "/addressBook";
+        return "addressBook";
     }
 }
