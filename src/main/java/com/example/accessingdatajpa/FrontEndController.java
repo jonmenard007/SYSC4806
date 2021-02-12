@@ -23,7 +23,7 @@ public class FrontEndController {
 
 
     @Autowired(required = true)
-    private AddressBookRepository addressBookRepository;
+    public AddressBookRepository addressBookRepository;
 
 
     @GetMapping("/")
