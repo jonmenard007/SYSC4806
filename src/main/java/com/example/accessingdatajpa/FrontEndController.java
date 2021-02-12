@@ -41,7 +41,7 @@ public class FrontEndController {
         System.out.println("in /2");
         model.addAttribute("addressBooks", addressBooks);
         System.out.println("in /here");
-        return "/addressBooks";
+        return "addressBooks";
     }
 
     @GetMapping("/test")
