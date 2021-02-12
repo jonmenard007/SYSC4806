@@ -1,5 +1,5 @@
 ## SYSC4806 LAB 5
-By Jacob Laboissonniere
+Jon Menard
 
 https://travis-ci.com/github/jonmenard007/SYSC4806
 https://jonmenard-sysc4806.herokuapp.com/
