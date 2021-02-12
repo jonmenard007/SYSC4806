@@ -8,7 +8,7 @@
         <h4>Address Books:</h4>
         <div   class = "addressBooks">
             <ol>
-                <li   th:each = "buddyInfo: ${addressBook}" th:text = "'FirstName: ' + ${buddyInfo.firstName} + ' LastName:' + ${buddyInfo.lastName} + ' PhoneNumber:' + ${buddyInfo.phoneNumber} + ' Id:' + ${buddyInfo.id}">
+                <li   th:each = "buddyInfo: ${addressBook}" th:text = "'FirstName: ' + ${buddyInfo.firstName} + ' LastName: ' + ${buddyInfo.lastName} + ' PhoneNumber: ' + ${buddyInfo.phoneNumber} + ' Address: ' +${buddyInfo.address} + ' Id: ' + ${buddyInfo.id}">
                 </li>
             </ol>
         </div>

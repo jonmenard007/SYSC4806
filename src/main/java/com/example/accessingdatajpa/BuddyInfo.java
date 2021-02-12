@@ -39,6 +39,13 @@ public class BuddyInfo{
         setPhoneNumber(phoneNumber);
     }
 
+    public BuddyInfo(String firstName, String lastName, String phoneNumber, String address) {
+        setFirstName(firstName);
+        setLastName(lastName);
+        setPhoneNumber(phoneNumber);
+        setAddress((address));
+    }
+
 
     public Integer getId() {
         return id;

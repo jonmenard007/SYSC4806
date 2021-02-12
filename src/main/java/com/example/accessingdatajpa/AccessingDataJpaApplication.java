@@ -30,7 +30,13 @@ public class AccessingDataJpaApplication  {
     @Bean
     public CommandLineRunner makeAddressBook(AddressBookRepository addressBookRepository, BuddyInfoRepository c) {
         return (args) -> {
-            addressBookRepository.save(new AddressBook());
+            AddressBook addressBook = new AddressBook();
+            BuddyInfo buddy1 = new BuddyInfo("Luke", "SkyWalker", "999-999-9999" , "193246 Desert Drive, Tatooine");
+            BuddyInfo buddy2 = new BuddyInfo("Padme", "Amidala", "999-999-9999" , "324234 Castle Drive, Nabii");
+            addressBook.addBuddyInfo(buddy1);
+            addressBook.addBuddyInfo(buddy2);
+            addressBookRepository.save(addressBook);
+            System.out.println(addressBook.toString());
         };
     }
 
