@@ -14,7 +14,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 
 @Repository
-
 @RepositoryRestResource(collectionResourceRel = "addressBook", path = "addressBook")
 public interface AddressBookRepository extends JpaRepository<AddressBook, Long> {
 

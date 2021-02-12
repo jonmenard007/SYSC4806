@@ -21,7 +21,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.test.web.servlet.MockMvc;
 import static org.assertj.core.api.Assertions.assertThat;
 
-@SpringBootTest(classes = TestController.class)
+@SpringBootTest(classes = FrontEndController.class)
 @AutoConfigureMockMvc
 public class TestingWebApplicationTests {
 
@@ -29,12 +29,12 @@ public class TestingWebApplicationTests {
     private MockMvc mockMvc;
 
     @Autowired
-    private TestController testController;
+    private FrontEndController frontEndController;
 
 
     @Test
     public void contextLoads() throws Exception {
-        assertThat(testController).isNotNull();
+        assertThat(frontEndController).isNotNull();
     }
 
     @Test
