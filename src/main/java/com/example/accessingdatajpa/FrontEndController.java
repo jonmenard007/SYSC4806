@@ -28,6 +28,7 @@ public class FrontEndController {
 
     @GetMapping("/")
     public String get(Model model) {
+        System.out.println("in /");
         ArrayList<AddressBook> addressBooks = (ArrayList<AddressBook>) addressBookRepository.findAll();
         AddressBook addressBook = addressBookRepository.findById(1);
         model.addAttribute("addressBooks", addressBooks);
