@@ -28,9 +28,8 @@ public class FrontEndController {
     @GetMapping("/")
     public String get(Model model) {
         ArrayList<AddressBook> addressBooks = (ArrayList<AddressBook>) addressBookRepository.findAll();
-        AddressBook addressBook = addressBookRepository.findById(1);
         model.addAttribute("addressBooks", addressBooks);
-        return "redirect:/homePage";
+        return "/homePage";
     }
 
     @GetMapping("/test")
@@ -43,7 +42,7 @@ public class FrontEndController {
     @GetMapping("/homePage")
     public String home(Model model) {
         ArrayList<AddressBook> addressBooks = (ArrayList<AddressBook>) addressBookRepository.findAll();
-        AddressBook addressBook = addressBookRepository.findById(1);
+
         model.addAttribute("addressBooks", addressBooks);
         return "/homePage";
     }
