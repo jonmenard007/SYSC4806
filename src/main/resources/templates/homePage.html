@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" id="html">
+    <head>
+        <title>Getting Started: Serving Web Content</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <script th:src ="@{/javaScript/jquery-3.4.1.js}"  type="application/javascript"> </script>
+        <script th:src ="@{/javaScript/main.js}"  type="application/javascript"> </script>
+    </head>
+    <body>
+        
+        <header>
+            <h1 class="singleAddressBook" hidden> Address Book</h1>
+        
+            <h1 class="allAddressBooks"> Welcome to Jon Menard's SYSC4806 Address Book</h1>
+        </header>
+        <main>
+            <div class="allAddressBooks">
+                <h4>Current Address Books:</h4>
+                <div   class = "addressBooks">
+                    <ol id ="addressBooksDisplay">
+                        <li   th:each = "addressBook: ${addressBooks}"  id>
+                            <a th:name = "${addressBook.addressbookId}" th:href="'getAdressBookInformation/' + ${addressBook.addressbookId}" class = "displayAddressBookLink" th:text = "'addressBook' + ${addressBook.addressbookId}"> </a>
+                        </li>
+                    </ol>
+                </div>
+                <h4> Create a new AddressBook</h4>
+                <div>
+                    <form action="/createNewAddressBook"  method = "POST">
+                        <input id="addNewAddressBook" type ="submit" value = "Add">
+                    </form>
+                </div>
+            </div>
+            
+            <div class="singleAddressBook" hidden>
+                <a href = "/homePage" d = "back"> Back </a>
+                <h4>Current Address Books:</h4>
+                <div   class = "addressBooks">
+                    <ol id = "addressBookDisplay">
+                        <li   th:each = "buddyInfo: ${addressBook}" th:text = "'FirstName: ' + ${buddyInfo.firstName} + ' LastName: ' + ${buddyInfo.lastName} + ' PhoneNumber: ' + ${buddyInfo.phoneNumber} + ' Address: ' +${buddyInfo.address} + ' Id: ' + ${buddyInfo.id}">
+                        </li>
+                    </ol>
+                </div>
+                <h4> Add a new contact</h4>
+                <div>
+                    <form id ="addNewContact" th:action="'/addNewBuddyToAddressBook/' + ${addressBookId}"  method = "POST">
+                        <label for ="firstName">Firstname</label> <input name ="firstName" type = "text">
+                        <label for ="lastName">LastName</label> <input  name ="lastName"type = "text"><br>
+                        <label for ="phone">Phone Number</label> <input name ="phoneNumber" type = "text">
+                        <label for ="address">Address</label> <input name ="address" type = "text"><br>
+                        <input  type ="submit" value = "Add">
+                    </form>
+                      
+                </div>
+            </div>
+        </main>
+</body>
+</html>

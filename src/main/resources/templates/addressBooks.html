@@ -3,15 +3,27 @@
     <head>
         <title>Getting Started: Serving Web Content</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <script th:src ="@{/javaScript/jquery-3.4.1.js}"  type="application/javascript"> </script>
     </head>
     <body>
-        <h4>Address Books:</h4>
-        <div   class = "addressBooks">
-            <ol>
-                <li   th:each = "addressBook: ${addressBooks}" >
-                    <a th:href="'displayAddressBook/' + ${addressBook.addressbookId}" th:text = "'addressBook' + ${addressBook.addressbookId}"> </a>
-                </li>
-            </ol>
-        </div>
-    </body>
+        <header>
+            <h1> Welcome to Jon Menard's SYSC4806 Address Book</h1>
+        </header>
+        <main>
+            <h4>Current Address Books:</h4>
+            <div   class = "addressBooks">
+                <ol>
+                    <li   th:each = "addressBook: ${addressBooks}" >
+                        <a th:href="'displayAddressBook/' + ${addressBook.addressbookId}" th:text = "'addressBook' + ${addressBook.addressbookId}"> </a>
+                    </li>
+                </ol>
+            </div>
+            <h4> Create a new AddressBook</h4>
+            <div>
+                <form action="/createNewAddressBook"  method = "POST">
+                    <input id="addNewAddressBook" type ="submit" value = "Add">
+                </form>
+            </div>
+        </main>
+</body>
 </html>

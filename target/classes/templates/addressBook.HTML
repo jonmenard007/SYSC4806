@@ -5,12 +5,28 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     </head>
     <body>
-        <h4>Address Books:</h4>
-        <div   class = "addressBooks">
-            <ol>
-                <li   th:each = "buddyInfo: ${addressBook}" th:text = "'FirstName: ' + ${buddyInfo.firstName} + ' LastName: ' + ${buddyInfo.lastName} + ' PhoneNumber: ' + ${buddyInfo.phoneNumber} + ' Address: ' +${buddyInfo.address} + ' Id: ' + ${buddyInfo.id}">
-                </li>
-            </ol>
-        </div>
+        <header>
+            <h1> Address Book</h1>
+        </header>
+        <main>
+            <h4>Current Address Books:</h4>
+            <div   class = "addressBooks">
+                <ol>
+                    <li   th:each = "buddyInfo: ${addressBook}" th:text = "'FirstName: ' + ${buddyInfo.firstName} + ' LastName: ' + ${buddyInfo.lastName} + ' PhoneNumber: ' + ${buddyInfo.phoneNumber} + ' Address: ' +${buddyInfo.address} + ' Id: ' + ${buddyInfo.id}">
+                    </li>
+                </ol>
+            </div>
+            <h4> Add a new contact</h4>
+            <div>
+                <form th:action="'/addBuddyToAddressBook/' + ${addressBookId}"  method = "POST">
+                    <label for ="firstName">Firstname</label> <input name ="firstName" type = "text">
+                    <label for ="lastName">LastName</label> <input  name ="lastName"type = "text"><br>
+                    <label for ="phone">Phone Number</label> <input name ="phoneNumber" type = "text">
+                    <label for ="address">Address</label> <input name ="address" type = "text"><br>
+                    <input type ="submit" value = "Add">
+                </form>
+            </div>
+        </main>
+        
     </body>
 </html>
